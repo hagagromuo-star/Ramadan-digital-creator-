@@ -268,12 +268,12 @@ export default function App() {
                     <h4 className="text-white/40 uppercase tracking-[0.3em] text-xs font-bold mb-2">استثمارك اليوم</h4>
                     <div className="flex items-center gap-4 flex-wrap">
                       <div className="flex items-baseline gap-1">
-                        <span className="text-6xl font-black">370</span>
-                        <span className="text-2xl font-bold">ج</span>
+                        <span className="text-6xl font-black">7</span>
+                        <span className="text-2xl font-bold">$</span>
                       </div>
                       <div className="flex items-baseline gap-1 text-white/20 line-through">
-                        <span className="text-2xl font-bold">1500</span>
-                        <span className="text-sm font-medium">ج</span>
+                        <span className="text-2xl font-bold">25</span>
+                        <span className="text-sm font-medium">$</span>
                       </div>
                     </div>
                   </div>
@@ -373,15 +373,15 @@ export default function App() {
                   <div className="space-y-1">
                     <span className="text-white/40 text-sm block">السعر الحالي للعرض</span>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-5xl md:text-6xl font-black text-brand">780</span>
-                      <span className="text-xl md:text-2xl font-bold text-brand">ج</span>
+                      <span className="text-5xl md:text-6xl font-black text-brand">20</span>
+                      <span className="text-xl md:text-2xl font-bold text-brand">$</span>
                     </div>
                   </div>
                   <div className="space-y-1">
                     <span className="text-white/40 text-sm block">القيمة الإجمالية</span>
                     <div className="flex items-baseline gap-2 text-white/20 line-through">
-                      <span className="text-2xl md:text-3xl font-bold">2200</span>
-                      <span className="text-base md:text-lg font-medium">ج</span>
+                      <span className="text-2xl md:text-3xl font-bold">50</span>
+                      <span className="text-base md:text-lg font-medium">$</span>
                     </div>
                   </div>
                 </div>
