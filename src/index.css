@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;600;700&family=Noto+Sans+Arabic:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Noto Sans Arabic", sans-serif;
+  
+  --color-brand: #ff4e00;
+  --color-brand-muted: rgba(255, 78, 0, 0.1);
+  --color-surface: #0a0a0a;
+  --color-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased selection:bg-brand selection:text-white;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.glass {
+  @apply bg-white/[0.03] backdrop-blur-xl border border-white/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-white/40;
+}
+
+.brand-glow {
+  @apply shadow-[0_0_50px_-12px_rgba(255,78,0,0.3)];
+}
+
+@layer utilities {
+  .neon-button {
+    @apply relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-black text-brand font-bold uppercase tracking-widest transition-all duration-500 border-2 border-brand whitespace-nowrap;
+    box-shadow: 
+      0 0 20px rgba(255, 78, 0, 0.4),
+      0 0 40px rgba(255, 78, 0, 0.2),
+      inset 0 0 15px rgba(255, 78, 0, 0.2);
+    text-shadow: 0 0 10px rgba(255, 78, 0, 0.6);
+  }
+
+  .neon-button:hover {
+    @apply bg-brand text-white scale-[1.05] border-brand;
+    box-shadow: 
+      0 0 40px rgba(255, 78, 0, 0.8),
+      0 0 80px rgba(255, 78, 0, 0.4),
+      0 0 120px rgba(255, 78, 0, 0.2),
+      inset 0 0 20px rgba(255, 255, 255, 0.4);
+    text-shadow: none;
+  }
+
+  .neon-button-white {
+    @apply relative inline-flex items-center justify-center px-8 py-4 rounded-full bg-black text-white font-bold uppercase tracking-widest transition-all duration-500 border-2 border-white/60 whitespace-nowrap;
+    box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.2),
+      0 0 40px rgba(255, 255, 255, 0.1),
+      inset 0 0 15px rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  }
+
+  .neon-button-white:hover {
+    @apply bg-white text-black scale-[1.05] border-white;
+    box-shadow: 
+      0 0 40px rgba(255, 255, 255, 0.6),
+      0 0 80px rgba(255, 255, 255, 0.3),
+      0 0 120px rgba(255, 255, 255, 0.15);
+    text-shadow: none;
+  }
+
+  .dual-neon-button {
+    @apply relative inline-flex items-center justify-center px-8 py-4 rounded-2xl bg-black text-white font-bold uppercase tracking-widest transition-all duration-500 border border-white/10 overflow-hidden whitespace-nowrap;
+    box-shadow: 
+      -10px 0 20px rgba(168, 85, 247, 0.3),
+      10px 0 20px rgba(59, 130, 246, 0.3);
+  }
+
+  .dual-neon-button::before {
+    content: '';
+    @apply absolute inset-0 opacity-40 transition-opacity duration-500;
+    background: linear-gradient(90deg, #a855f7 0%, transparent 50%, #3b82f6 100%);
+    filter: blur(15px);
+    z-index: -1;
+  }
+
+  .dual-neon-button:hover {
+    @apply scale-[1.05] border-white/30;
+    box-shadow: 
+      -15px 0 40px rgba(168, 85, 247, 0.6),
+      15px 0 40px rgba(59, 130, 246, 0.6);
+  }
+
+  .dual-neon-button:hover::before {
+    @apply opacity-70;
+  }
+
+  .premium-glow-button {
+    @apply relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-black text-white font-bold transition-all duration-700 border-2 border-brand overflow-visible whitespace-nowrap;
+    box-shadow: 
+      0 0 15px rgba(255, 78, 0, 0.4),
+      0 0 30px rgba(255, 78, 0, 0.2),
+      inset 0 0 10px rgba(255, 78, 0, 0.2);
+  }
+
+  .premium-glow-button::before {
+    content: '';
+    @apply absolute -inset-8 bg-brand/30 blur-[40px] rounded-full -z-10 opacity-50 transition-opacity duration-700;
+  }
+
+  .premium-glow-button:hover {
+    @apply scale-[1.05] bg-brand text-white;
+    box-shadow: 
+      0 0 30px rgba(255, 78, 0, 0.8),
+      0 0 60px rgba(255, 78, 0, 0.4),
+      0 0 100px rgba(255, 78, 0, 0.2);
+  }
+
+  .premium-glow-button:hover::before {
+    @apply opacity-80 bg-brand/30 blur-[60px];
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
