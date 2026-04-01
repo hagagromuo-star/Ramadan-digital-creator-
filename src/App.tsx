@@ -271,10 +271,6 @@ export default function App() {
                         <span className="text-6xl font-black">7</span>
                         <span className="text-2xl font-bold">$</span>
                       </div>
-                      <div className="flex items-baseline gap-1 text-white/20 line-through">
-                        <span className="text-2xl font-bold">25</span>
-                        <span className="text-sm font-medium">$</span>
-                      </div>
                     </div>
                   </div>
                 <ul className="space-y-4">
@@ -375,13 +371,6 @@ export default function App() {
                     <div className="flex items-baseline gap-2">
                       <span className="text-5xl md:text-6xl font-black text-brand">20</span>
                       <span className="text-xl md:text-2xl font-bold text-brand">$</span>
-                    </div>
-                  </div>
-                  <div className="space-y-1">
-                    <span className="text-white/40 text-sm block">القيمة الإجمالية</span>
-                    <div className="flex items-baseline gap-2 text-white/20 line-through">
-                      <span className="text-2xl md:text-3xl font-bold">50</span>
-                      <span className="text-base md:text-lg font-medium">$</span>
                     </div>
                   </div>
                 </div>
