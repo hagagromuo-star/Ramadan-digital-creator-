@@ -288,7 +288,7 @@ export default function App() {
                   </li>
                 </ul>
                 <a 
-                  href="https://alfan.link/ramadandigital"
+                  href="https://Jaguar-business.nzmly.com/l/nSsRhXWIPt"
                   target="_blank"
                   className="dual-neon-button w-full"
                 >
@@ -468,7 +468,7 @@ export default function App() {
           
           <div className="flex flex-col gap-8 justify-center items-center">
             <a 
-              href="https://alfan.link/ramadandigital"
+              href="https://Jaguar-business.nzmly.com/l/nSsRhXWIPt"
               target="_blank"
               className="premium-glow-button min-w-[240px] group"
             >
