@@ -422,7 +422,7 @@ export default function App() {
             <h2 className="text-5xl md:text-8xl font-display font-black leading-tight">الدليل المجاني <br /><span className="text-brand">للبداية الصحيحة</span></h2>
             <p className="text-xl md:text-3xl text-white/70 leading-relaxed max-w-3xl mx-auto">هذا الدليل هو بوابتك الأولى لفهم عالم المنتجات الرقمية وكيف تبدأ أولى خطواتك مجاناً وبدون أي تعقيدات.</p>
             <a 
-              href="https://drive.google.com/file/d/1VIihN9BLtzKDHk1GUOJ7VxAor3nysim8/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1MxUnoTtBmxh6_18LCQzgbFeLwE_SqABf/view?usp=drivesdk"
               target="_blank"
               className="neon-button group"
             >
@@ -476,7 +476,7 @@ export default function App() {
               <span>الكورس الشامل</span>
             </a>
             <a 
-              href="https://drive.google.com/file/d/1VIihN9BLtzKDHk1GUOJ7VxAor3nysim8/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1MxUnoTtBmxh6_18LCQzgbFeLwE_SqABf/view?usp=drivesdk"
               target="_blank"
               className="neon-button-white min-w-[240px]"
             >
